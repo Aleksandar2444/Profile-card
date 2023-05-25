@@ -1,0 +1,125 @@
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-info > div {
+  height: 70px;
+}
+
+.image-container {
+  padding: 20px 0 40px 0;
+  width: 50%;
+}
+
+img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.user-info > div:nth-child(3) {
+  display: flex;
+  flex-direction: revert;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+input {
+  height: 30px;
+  border-radius: 5px;
+  width: -webkit-fill-available;
+}
+
+input::placeholder {
+  color: #c7c3c3;
+}
+
+.buttons-container {
+  width: -webkit-fill-available;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttons-container > button {
+  height: 30px;
+  width: 35%;
+  border-radius: 6px;
+  line-height: 1.25;
+}
+
+.edit-profile {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.card-wrapper {
+  width: -webkit-fill-available;
+  margin: 2% 30%;
+  -webkit-perspective: 800px;
+  perspective: 800px;
+  height: 550px;
+  background: #808080;
+  border-radius: 7px;
+}
+
+.card-box {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: transform 1s;
+  -ms-transform: transform 1s;
+  transform: transform 1s;
+  width: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 70px;
+}
+
+.card-box__side {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  top: 320px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.card-box__front {
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.card-box__back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 35px;
+  -webkit-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fill-available;
+}
